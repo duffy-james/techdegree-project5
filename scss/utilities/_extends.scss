@@ -1,0 +1,68 @@
+
+// nav items
+
+%nav-item-horz {
+  @include mq(medium) {
+    display: inline-block;
+    margin: 0 em(12px);
+  }
+}
+
+%nav-item-link {
+  font-size: em(18px);
+  font-weight: $font-weight--light;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  padding: em(8px, 18px);
+  border-bottom: 1px solid transparent;
+  @include mq(small) {
+    border-bottom-color: palette(gray, xx-light);
+    padding-top: em(14px, 18px);
+    padding-bottom: em(14px, 18px);
+  }
+}
+
+%nav-item-on {
+  color: palette(black);
+  border-color: $color-primary;
+}
+
+// Headlines
+
+%hdln-prim {
+  font-weight: $font-weight--light;
+  font-size: em(42px);
+  line-height: (46px / 42px);
+  margin-bottom: em(70px, 42px);
+  color: palette(gray, x-dark);
+  margin-top: 0;
+}
+
+%hdln-sec {
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--thin;
+  font-size: em(24px);
+  color: palette(gray, light);
+  letter-spacing: $letter-space;
+}
+
+//buttons
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: $br--default;
+  color: $white;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: em(14px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}

@@ -65,3 +65,30 @@ $ui-colors: (
 
 $base__font-size : 16px;
 $base__line      : 24px;
+$letter-space    : 1px;
+
+// Path to Image Assets
+
+$path--rel       : "../img";
+
+//Border border
+
+$br--default     : .4em;
+$br--round       : 50%;
+
+// Transition
+
+$trns-duration   : .5;
+
+// Grid
+
+$g-col-width     : 65px;
+$g-gutter-width  : 20px;
+$g-col-count     : 12;
+$g-cont-max-w    : 1050px;
+
+// Breakpoints
+
+$brkpoint-sm     : 1px;
+$brkpoint-md      : 768px;
+$brkpoint-lg     : 1100px;

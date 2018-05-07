@@ -1,0 +1,13 @@
+.img {
+  @include m(logo) {
+    border: 1px solid palette(gray, x-light);
+    padding: em(12px);
+  }
+  @include m(avatar) {
+    display: block;
+    border-radius: $br--round;
+  }
+  @include m(frame) {
+    margin-bottom: em(42px);
+  }
+}
