@@ -2,6 +2,10 @@
   @include m(logo) {
     border: 1px solid palette(gray, x-light);
     padding: em(12px);
+    @include mq(small){
+      display: block;
+      margin: 0 auto;
+    }
   }
   @include m(avatar) {
     display: block;

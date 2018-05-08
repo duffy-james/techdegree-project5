@@ -1,9 +1,16 @@
 
+nav {
+  @include mq(medium) {
+    width: 100%;
+  }
+}
+
 
 .nav {
   margin-top: em(20px);
   margin-bottom: em(30px);
   margin-right: 0;
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
 

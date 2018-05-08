@@ -3,6 +3,8 @@ body {
   font-size: $base__font-size;
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--primary;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header {
@@ -42,11 +44,10 @@ blockquote {
   font-weight: $font-weight--light;
   margin: em(32px, 24px) 0;
   padding: 0 0 0 5%;
-  border-left: solid em(8px, 24px) palette(gray, xx-light);
+  border-left: solid em(8px, 24px) $emerald;
 }
 
 img {
-  margin-bottom: em(24px);
   max-width: 100%;
-  height: auto;
+  display: block;
 }

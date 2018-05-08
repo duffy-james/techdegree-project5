@@ -15,7 +15,6 @@
   display: block;
   margin-left: auto;
   padding: em(8px, 18px);
-  border-bottom: 1px solid transparent;
   @include mq(small) {
     border-bottom-color: palette(gray, xx-light);
     padding-top: em(14px, 18px);
@@ -24,25 +23,28 @@
 }
 
 %nav-item-on {
-  color: palette(black);
+  color: $white;
+  background-color: $emerald;
   border-color: $color-primary;
+  border-radius: $br--default;
 }
 
 // Headlines
 
 %hdln-prim {
-  font-weight: $font-weight--light;
-  font-size: em(42px);
-  line-height: (46px / 42px);
-  margin-bottom: em(70px, 42px);
-  color: palette(gray, x-dark);
+  font-weight: $font-weight--bold;
+  font-size: em(40px);
+  line-height: (46px / 40px);
+  margin-bottom: em(70px, 40px);
+  margin-left: em(25px, 40px);
+  color: $emerald;
   margin-top: 0;
 }
 
 %hdln-sec {
   font-family: $font-family--secondary;
   font-weight: $font-weight--thin;
-  font-size: em(24px);
+  font-size: em(18px);
   color: palette(gray, light);
   letter-spacing: $letter-space;
 }

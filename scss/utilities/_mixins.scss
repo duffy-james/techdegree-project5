@@ -64,15 +64,6 @@
   margin: 0 auto;
 }
 
-// For images
-
-@mixin img-replace($img, $w, $h, $disp: block) {
-  background-image: url ('#{$path--rel}/#{$img}');
-  background-repeat: no-repeat;
-  width: $w;
-  height: $h;
-  display: $disp;
-}
 
 // BEM selectors
 
@@ -111,4 +102,9 @@
       width: percentage($target / $context);
     }
   }
+}
+
+.img--logo {
+  display: block;
+  margin: 0 auto;
 }
