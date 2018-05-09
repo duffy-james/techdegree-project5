@@ -11,8 +11,7 @@ nav {
   margin-bottom: em(30px);
   margin-right: 0;
   margin-left: auto;
-  display: flex;
-  justify-content: space-between;
+  @include flexy-row;
 
   @include e(item) {
     @extend %nav-item-horz;
@@ -32,6 +31,6 @@ nav {
     }
   } @include mq(small) {
     padding-left: 0;
-    flex-direction: column;
+    @include flexy-column;
   }
 }

@@ -1,8 +1,7 @@
 // Form
 
 .form {
-  display: flex;
-  flex-direction: column;
+  @include flexy-column;
   width: 90%;
   margin-left: auto;
   margin-right: auto;

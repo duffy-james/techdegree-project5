@@ -13,7 +13,4 @@
   @include mq(small) {
     width: 100%;
   }
-  @include mq(medium) {
-    flex-direction: row;
-  }
 }

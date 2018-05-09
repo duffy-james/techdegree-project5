@@ -118,3 +118,16 @@
   display: block;
   margin: 0 auto;
 }
+
+// Default flexbox options
+
+@mixin flexy-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flexy-column {
+  display: flex;
+  flex-direction: column;
+}

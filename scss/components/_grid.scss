@@ -31,30 +31,17 @@
 .grid__row {
   @extend %clearfix;
   @extend .centered;
-  display: flex;
-  flex-direction: row;
+  @include flexy-row;
   align-items: center;
-  justify-content: space-between;
   margin-top: em(20px);
   margin-bottom: em(20px);
   padding-top: em(10px);
   padding-bottom: em(10px);
 
-  // // Make nested grid 100%
-  //
-  // [class*="grid__col--"] > & {
-  //   width: 100%;
-  //   background-color: red;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //
-  // }
-
   // Set min-width
 
   @include mq(small) {
-    flex-direction: column;
+    @include flexy-column;
   }
 
   // Set a max-width
@@ -71,10 +58,8 @@
 
   @include mq(medium) {
     & .grid__col--12 {
-      display: flex;
-      flex-direction: row;
+      @include flexy-row;
       align-items: center;
-      justify-content: space-between;
     }
   }
 }
