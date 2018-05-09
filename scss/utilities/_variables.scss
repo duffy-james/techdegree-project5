@@ -15,15 +15,21 @@ $font-weight--ultra-bold : 900;
 
 // Descriptive Base Colors
 
-$white          : #fff;
-$black          : #0b0b0b;
-$gray           : #797e83;
-$fountain-blue  : #52bab3;
-$emerald        : #5ece7f;
-$sunglo         : #e67478;
-$coral          : #ff784f;
-$purple-majesty : #9279c3;
-$scooter        : #39add1;
+$white           : #fff;
+$black           : #0b0b0b;
+$gray            : #797e83;
+$fountain-blue   : #52bab3;
+$emerald         : #5ece7f;
+$sunglo          : #e67478;
+$coral           : #ff784f;
+$purple-majesty  : #9279c3;
+$scooter         : #39add1;
+$turqoise-blue   : #61EDA5;
+$cornflower-blue : #6195ED;
+$light-blue      : #61DAED;
+$heliotrope      : #DC61ED;
+$mandy           : #ED6174;
+$burnt-sienna    : #ED8061;
 
 // Color Usage
 
@@ -35,7 +41,7 @@ $color-shadow    : rgba($black, .2);
 // Color Pallette Modifiers
 
 $palettes: (
-  grey: (
+  gray: (
     xx-light : lighten($gray, 43%),
     x-light  : lighten($gray, 35%),
     light    : lighten($gray, 12%),
@@ -59,6 +65,23 @@ $ui-colors: (
   error   : $sunglo,
   warning : $coral,
   info    : $purple-majesty
+);
+
+// Grid-colors
+
+$grid-colors: (
+  '1'     : $fountain-blue,
+  '2'     : $emerald,
+  '3'     : $heliotrope,
+  '4'     : $light-blue,
+  '5'     : $fountain-blue,
+  '6'     : $cornflower-blue,
+  '7'     : $mandy,
+  '8'     : $burnt-sienna,
+  '9'     : $sunglo,
+  '10'    : $coral,
+  '11'    : $purple-majesty,
+  '12'    : $turqoise-blue
 );
 
 // Text

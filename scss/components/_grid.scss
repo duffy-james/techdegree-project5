@@ -9,22 +9,17 @@
 
 // Column stylesheet
 [class^="grid__col--"] {
-
+  padding: em(5px);
+  border-radius: $br--default;
   @include mq(small) {
     margin-top: em(12px);
     margin-bottom: em(12px);
     width: 100%;
   }
   @include mq(medium) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     @include doubly(percentage($g-gutter-width / $context));
     float: left;
     min-height: 1px;
-    // padding-left: 10px;
-    // padding-right: 10px;
     &:last-of-type {
       float: right;
     }
@@ -69,6 +64,31 @@
   }
 }
 
-.theme__colors {
+
+// Row spacing for Buttons
+
+.grid__row:nth-last-child(9) {
+
+  @include mq(medium) {
+    & .grid__col--12 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+// Colors for Grid system
+.grid__row:nth-last-child(-n + 7) {
   text-align: center;
+  color: $gray;
+  padding: em(10px);
+  border-radius: $br--default;
+  @include mq(small) {
+    text-align: left;
+  }
+  .grid__col {
+    @include grid-colors($grid-colors);
+  }
 }

@@ -28,6 +28,14 @@
   }
 }
 
+@mixin grid-colors ($map) {
+  @each $number, $color in $map {
+    &--#{$number} {
+      background-color: $color;
+    }
+  }
+}
+
 // Clearfix
 
 %clearfix {
@@ -74,7 +82,7 @@
 }
 
 @mixin m($modifier) {
-  &__#{$modifier} {
+  &--#{$modifier} {
     @content;
   }
 }
@@ -104,7 +112,9 @@
   }
 }
 
-.img--logo {
+// Center Images
+
+@mixin img-center {
   display: block;
   margin: 0 auto;
 }

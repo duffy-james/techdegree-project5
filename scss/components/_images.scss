@@ -1,17 +1,23 @@
-.img {
-  @include m(logo) {
-    border: 1px solid palette(gray, x-light);
-    padding: em(12px);
-    @include mq(small){
-      display: block;
-      margin: 0 auto;
-    }
+.img--logo {
+
+  @include mq(small) {
+    @include img-center;
   }
-  @include m(avatar) {
-    display: block;
+}
+
+.img--avatar {
+  @include img-center;
+  @include mq(medium) {
     border-radius: $br--round;
   }
-  @include m(frame) {
-    margin-bottom: em(42px);
+}
+
+.img--frame {
+  margin: em(20px);
+  padding: em(10px);
+  border: 1px solid $gray;
+  @include img-center;
+  @include mq(small) {
+    width: 90%;
   }
 }
