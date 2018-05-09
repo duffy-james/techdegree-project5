@@ -1,3 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+.grid__row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.srt, .form__label--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.centered, ul, .grid__row {
+  float: none;
+  margin: 0 auto; }
+
+@media (min-width: 769px) {
+  .nav__item, .nav__item--current {
+    display: inline-block;
+    margin: 0 0.75em; } }
+
+.nav__item a, .nav__item--current a {
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  padding: 0.4444444444em; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .nav__item a, .nav__item--current a {
+      border-bottom-color: #ebecec;
+      padding-top: 0.7777777778em;
+      padding-bottom: 0.7777777778em; } }
+
+.nav__item a:hover, .nav__item--current a {
+  color: #fff;
+  background-color: #5ece7f;
+  border-color: #52bab3;
+  border-radius: 0.4em; }
+
+h1, .headline--primary--grouped, .headline--primary {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.15;
+  margin-bottom: 1.75em;
+  margin-left: 0.625em;
+  color: #5ece7f;
+  margin-top: 0; }
+
+h2, .headline--secondary--grouped, .headline--secondary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.125em;
+  color: #999da1;
+  letter-spacing: 1px; }
+
+.form .btn--default {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 0.4em;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 400;
+  transition: opacity 0.5;
+  display: block; }
+  .form .btn--default:hover {
+    opacity: .75; }
+  .form .btn--default:active {
+    opacity: initial; }
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +81,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 html {
   line-height: 1.15;
   /* 1 */
@@ -297,81 +372,6 @@ template {
  */
 [hidden] {
   display: none; }
-
-.grid__row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.srt, .form__label--hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.centered, ul, .grid__row {
-  float: none;
-  margin: 0 auto; }
-
-@media (min-width: 769px) {
-  .nav__item, .nav__item--current {
-    display: inline-block;
-    margin: 0 0.75em; } }
-
-.nav__item a, .nav__item--current a {
-  font-size: 1.125em;
-  font-weight: 300;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  padding: 0.4444444444em; }
-  @media (min-width: 1px) and (max-width: 768px) {
-    .nav__item a, .nav__item--current a {
-      border-bottom-color: #ebecec;
-      padding-top: 0.7777777778em;
-      padding-bottom: 0.7777777778em; } }
-
-.nav__item a:hover, .nav__item--current a {
-  color: #fff;
-  background-color: #5ece7f;
-  border-color: #52bab3;
-  border-radius: 0.4em; }
-
-h1, .headline--primary--grouped, .headline--primary {
-  font-weight: 700;
-  font-size: 2.5em;
-  line-height: 1.15;
-  margin-bottom: 1.75em;
-  margin-left: 0.625em;
-  color: #5ece7f;
-  margin-top: 0; }
-
-h2, .headline--secondary--grouped, .headline--secondary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 1.125em;
-  color: #999da1;
-  letter-spacing: 1px; }
-
-.form .btn--default {
-  padding: 15px 30px;
-  border: 0;
-  border-radius: 0.4em;
-  color: #fff;
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 0.875em;
-  font-weight: 400;
-  transition: opacity 0.5;
-  display: block; }
-  .form .btn--default:hover {
-    opacity: .75; }
-  .form .btn--default:active {
-    opacity: initial; }
 
 body {
   font-size: 16px;
