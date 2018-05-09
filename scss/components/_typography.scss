@@ -1,25 +1,12 @@
 // Headlines
 
 .headline {
-
   &--primary {
-
-    @include m(grouped) {
-      @extend %hdln-prim;
-      margin-bottom: 0;
-    }
     @extend %hdln-prim;
     margin-bottom: em(70px, 42px);
-
-}
+  }
 
   &--secondary {
-
-    @include m(grouped) {
-      @extend %hdln-sec;
-      margin-top: em(10px, 24px);
-      margin-bottom: em(54px, 24px);
-    }
 
     @extend %hdln-sec;
     margin-bottom: em(22px, 24px);
@@ -27,6 +14,16 @@
 
 }
 
+.blockquote {
+  font-size: em(24px);
+  font-style: italic;
+  font-weight: $font-weight--light;
+  margin: em(32px, 24px) 0;
+  padding: 0 0 0 5%;
+  border-left: solid em(8px, 24px) $emerald;
+}
+
 p .link {
+  @include page-links;
   color: $fountain-blue;
 }

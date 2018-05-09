@@ -15,6 +15,7 @@
   display: block;
   margin-left: auto;
   padding: em(8px, 18px);
+  @include page-links;
   @include mq(small) {
     border-bottom-color: palette(gray, xx-light);
     padding-top: em(14px, 18px);

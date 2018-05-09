@@ -1,3 +1,13 @@
+// container
+
+.container {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+  width: 90%;
+  margin: 0 auto;
+}
+
 // Calculate grid columns
 
 .grid__col {

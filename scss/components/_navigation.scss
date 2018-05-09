@@ -1,12 +1,8 @@
 
-nav {
-  @include mq(medium) {
-    width: 100%;
-  }
-}
 
 
 .nav {
+  list-style-type: none;
   margin-top: em(20px);
   margin-bottom: em(30px);
   margin-right: 0;
@@ -29,8 +25,12 @@ nav {
           @extend %nav-item-on;
         }
     }
-  } @include mq(small) {
-    padding-left: 0;
-    @include flexy-column;
   }
+    @include mq(small) {
+      padding-left: 0;
+      @include flexy-column;
+    }
+    @include mq(medium) {
+      width: 100%;
+    }
 }

@@ -1,53 +1,7 @@
 
-body {
-  font-size: $base__font-size;
-  line-height: ($base__line/$base__font-size);
-  font-family: $font-family--primary;
-  width: 90%;
-  margin: 0 auto;
-}
-
-header {
-  text-align: center;
-  padding: em(48px) 0;
-}
-
-h1 {
-  @extend %hdln-prim;
-}
-
-h2 {
-  @extend %hdln-sec;
-}
-
-ul {
-  list-style-type: none;
-  @extend .centered;
-}
-
-a {
-  color: palette(gray, dark);
-  text-decoration: none;
-  font-weight: $font-weight--medium;
-}
-
 p {
   font-size: em(18px);
   line-height: (27px / 18px);
   margin: 0 0 em(30px, 18px);
   font-weight: $font-weight--light;
-}
-
-blockquote {
-  font-size: em(24px);
-  font-style: italic;
-  font-weight: $font-weight--light;
-  margin: em(32px, 24px) 0;
-  padding: 0 0 0 5%;
-  border-left: solid em(8px, 24px) $emerald;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
